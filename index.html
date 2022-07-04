@@ -10,22 +10,89 @@
     <link rel="stylesheet" href="./css/tailwind.css">
     <title>Platzi Travel</title>
 </head>
-<body>  
-    <header>
-        <nav>navbar</nav>
+<body class="font-Monserrat">  
+    <header class="hidden w-auto h-14 bg-white">
+        <nav>
+            <div class="w-auto h-auto font-black text-primary">
+                <p>Platzi Travel</p>
+            </div>
+            <div class="flex flex-row space-x-10">
+                <a href="#home" class="font-bold text-primary">Home</a>
+                <a href="#recommended" class="font-bold text-primary">Recommended</a>
+                <a href="#rents" class="font-bold text-primary">Rents</a>
+                <a href="#faqs" class="font-bold text-primary">FAQs</a>
+                <a href="#about-us" class="font-bold text-primary">About Us</a>
+            </div>
+            <div class="flex space-x-4">
+                <button id="toogle">
+
+                </button>
+            </div>
+        </nav>
     </header>
     <main>
+        <!-- Home section -->
+        <section class="w-full h-3/4" id="home">
+            <div class="relative">
+                <div class="absolute w-full h-full flex flex-col items-center space-y-96 py-4 z-10">
+                    <input  
+                        type="search" 
+                        name="searchbar"
+                        class="rounded-full transition-all ease-in-out duration-500 outline-none focus-within:shadow-sm focus:outline-none focus:ring focus:w-11/12 p-3"
+                        placeholder="San Francisco..."
+                    >
+                    <div class="h-auto pb-6 hidden"/>
+                        <p class="text-4xl font-bold">Find more like this...</p>
+                    </div>
+                    <button class="bg-white text-primary w-48 h-auto p-3 rounded-full shadow-md font-semibold transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110">
+                        Explore more
+                    </button>
+                </div>
+                <div class="w-full h-full bg-cover lg:bg-sanFranciscoDesktop lg:bg-center">
+                    <img
+                        src="./img/sanFrancisco.jpg"
+                        class="w-full h-full lg:hidden"
+                    >
+                </div>
+            </div>
+        </section>
         <section class="w-full h-auto lg:px-2">
             <div class="p-6 h-full">
                 <p class="text-3xl font-semibold pb-6 text-primary">Our Recomendations</p>
-                <div class="flex">
-                    <div class="w-34 py-3">
-                        <div class="card">
-                            <div class="bg-norway bg-cover w-full h-3/5 rounded-t-lg"></div>
-                            <div class="bg-secondary text-white px-4 h-2/5 rounded-b-lg dark:bg-gray-700">
-                                <p class="text-xl py-2 font-semibold">Norway</p>
-                                <p class="text-sm overflow-ellipsis pr-2">Beautiful landscapes</p>
-                            </div>
+                <div class="flex gap-4 overflow-x-auto overscroll-x-contain overflow-y-hidden scrollbar-hide">
+                    <div class="card">
+                        <div class="bg-norway bg-cover w-full h-3/5 rounded-t-lg"></div>
+                        <div class="px-4 h-2/5 rounded-b-lg dark:bg-gray-700">
+                            <p class="text-xl py-2 font-semibold">Norway</p>
+                            <p class="text-sm overflow-ellipsis pr-2">Beautiful landscapes</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="bg-new_york bg-cover w-full h-3/5 rounded-t-lg"></div>
+                        <div class="px-4 h-2/5 rounded-b-lg dark:bg-gray-700">
+                            <p class="text-xl py-2 font-semibold">New York</p>
+                            <p class="text-sm overflow-ellipsis pr-2">Concrete jungle</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="bg-yosemite bg-cover w-full h-3/5 rounded-t-lg"></div>
+                        <div class="px-4 h-2/5 rounded-b-lg dark:bg-gray-700">
+                            <p class="text-xl py-2 font-semibold">Yosemite</p>
+                            <p class="text-sm overflow-ellipsis pr-2">A break from the world</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="bg-seattle bg-cover w-full h-3/5 rounded-t-lg"></div>
+                        <div class="px-4 h-2/5 rounded-b-lg dark:bg-gray-700">
+                            <p class="text-xl py-2 font-semibold">Seattle</p>
+                            <p class="text-sm overflow-ellipsis pr-2">Big city</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="bg-switzerland bg-cover w-full h-3/5 rounded-t-lg"></div>
+                        <div class="px-4 h-2/5 rounded-b-lg dark:bg-gray-700">
+                            <p class="text-xl py-2 font-semibold">Switzerland</p>
+                            <p class="text-sm overflow-ellipsis pr-2">Big city</p>
                         </div>
                     </div>
                 </div>
@@ -80,7 +147,7 @@
             </div>
         </section>
     </main>
-
+    
     <footer class="w-full h-auto bg-gray-50 p-6 mt-8 flex flex-col space-y-2 ">
         <p class="text-lg">About us</p>
         <a class="text-sm text-gray-300">Investors</a>
@@ -89,5 +156,8 @@
         <a class="text-sm text-gray-300">Platzi Travel, inc</a>
         <a class="text-sm text-gray-300">Follow Us</a>
     </footer>
+    <section class="w-full h-16 bg-white">
+
+    </section>
 </body>
 </html>
