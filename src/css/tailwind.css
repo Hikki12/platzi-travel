@@ -9,3 +9,10 @@
 .card-title {
     @apply text-3xl px-8 pt-8 pb-1 font-semibold text-white
 }
+
+.card:nth-child(even) {
+    @apply bg-white text-tertiary
+}
+.card:nth-child(odd) {
+    @apply bg-secondary text-white
+}
