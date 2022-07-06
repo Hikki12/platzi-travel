@@ -1,2 +1,2 @@
 #!/bin/sh
-git subtree push --prefix src origin gh-pages
+git subtree push --prefix public origin gh-pages
