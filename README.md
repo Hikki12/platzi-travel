@@ -5,4 +5,9 @@ From the tailwind css course. Here is the [Figma](https://www.figma.com/file/aPb
 src="./design/platzitravelapp.png"
 />
 
+## Deploy
+For deploy the current project on Github Pages, run the following command:
+```sh
+sh deploy.sh
+```
 
